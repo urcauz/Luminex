@@ -31,16 +31,14 @@ app.use(
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
-// 🏭 Serve frontend in production or skip if you don't need it
 if (process.env.NODE_ENV === "production") {
-  // Serve static assets (if you want to serve any static assets directly from frontend/src)
-  app.use(express.static(path.join(__dirname, "../frontend/src")));
+  app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
-  // Handle all other routes and send the frontend HTML
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../frontend/src", "index.html"));  // or other entry file for your frontend
+    res.sendFile(path.join(__dirname, "../frontend/dist", "index.html"));
   });
 }
+
 
 // 🚀 Start server
 server.listen(PORT, () => {
