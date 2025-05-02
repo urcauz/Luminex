@@ -4,13 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "build": "npm install --include=dev --prefix backend && npm install --include=dev --prefix frontend && npm run build --prefix frontend",
-  "start": "npm run start --prefix backend"
+    "build": "npm install --include=dev --prefix backend && npm install --include=dev --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.2",
+    "cropperjs": "^2.0.0",
+    "react-easy-crop": "^5.4.1"
   }
 }

@@ -7,7 +7,8 @@ import { Send } from "lucide-react";
 const PREVIEW_MESSAGES = [
   { id: 1, content: "Luminex was created by Cauz.", isSent: false },
   { id: 2, content: "Btw this theme is good anyways.", isSent: true },
-  
+  { id: 3, content: "Tabish was here.", isSent: false },
+  { id: 4, content: "Pirate was here to help", isSent: true },
 ];
 
 const SettingsPage = () => {
@@ -16,9 +17,9 @@ const SettingsPage = () => {
   return (
     <div className="h-screen container mx-auto px-4 pt-20 max-w-5xl">
       <div className="space-y-6">
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-3">
           <h2 className="text-lg font-semibold">Theme</h2>
-          <p className="text-sm text-base-content/70">Choose a theme for your chat interface</p>
+          <p className="text-sm text-base-content/70">Choose a theme here. <br />(please dont use Cyberpunk theme, i hate it.)</p>
         </div>
 
 
