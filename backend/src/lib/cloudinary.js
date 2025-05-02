@@ -12,4 +12,4 @@ cloudinary.config({
 });
 
 export default cloudinary;
-w
+console.log("Cloudinary config loaded");
