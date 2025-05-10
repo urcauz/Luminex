@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm install --include=dev --prefix backend && npm install --include=dev --prefix frontend && npm run build --prefix frontend",
+    "build":"npm install --include=dev --prefix backend && npm install --include=dev --prefix frontend && npm run build --prefix frontend && cp -r frontend/dist ./dist"
+,
     "start": "npm run start --prefix backend"
   },
   "keywords": [],
@@ -14,6 +15,7 @@
     "vite": "^4.0.0"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.18.4",
     "@headlessui/react": "^2.2.2",
     "cropperjs": "^2.0.0",
     "react-easy-crop": "^5.4.1"
