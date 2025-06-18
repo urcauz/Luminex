@@ -29,7 +29,7 @@ const MessageInput = () => {
     setImagePreview(null);
     if (fileInputRef.current) fileInputRef.current.value = "";
   };
-
+  
   const handleSendMessage = async (e) => {
     e.preventDefault();
     if (!text.trim() && !imagePreview) return;
@@ -76,9 +76,10 @@ const MessageInput = () => {
           <input
             type="text"
             className="w-full input input-bordered rounded-lg input-sm sm:input-md"
-            placeholder="Type a message..."
+            placeholder="Type Something here..."
             value={text}
             onChange={(e) => setText(e.target.value)}
+          
           />
           <input
             type="file"

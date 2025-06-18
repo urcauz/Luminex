@@ -4,20 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build":"npm install --include=dev --prefix backend && npm install --include=dev --prefix frontend && npm run build --prefix frontend && cp -r frontend/dist ./dist"
-,
+    "build": "npm install --include=dev --prefix backend && npm install --include=dev --prefix frontend && npm run build --prefix frontend && cp -r frontend/dist ./dist",
     "start": "npm run start --prefix backend"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vite": "^4.0.0"
+    "vite": "^6.3.5"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.18.4",
     "@headlessui/react": "^2.2.2",
     "cropperjs": "^2.0.0",
     "react-easy-crop": "^5.4.1"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }

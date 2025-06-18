@@ -9,7 +9,7 @@ const ProfilePage = () => {
   const handleImageUpload = async (e) => {
     const file = e.target.files[0];
     if (!file) return;
-
+    
     const reader = new FileReader();
 
     reader.readAsDataURL(file);
@@ -60,7 +60,7 @@ const ProfilePage = () => {
               </label>
             </div>
             <p className="text-sm text-zinc-400">
-              {isUpdatingProfile ? "Uploading..." : "Click the camera icon to update your photo"}
+              {isUpdatingProfile ? "Hold your Horses, its Uploading..." : "Click the camera icon to update your photo"}
             </p>
           </div>
 
@@ -92,6 +92,7 @@ const ProfilePage = () => {
               <div className="flex items-center justify-between py-2">
                 <span>Account Status</span>
                 <span className="text-green-500">Active</span>
+                
               </div>
             </div>
           </div>

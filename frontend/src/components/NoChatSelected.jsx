@@ -20,8 +20,8 @@ const NoChatSelected = () => {
 
         {/* Welcome Text */}
         <h2 className="text-2xl font-bold">Welcome to Luminex!</h2>
-        <p className="text-base-content/60">
-          Select a conversation from the sidebar to start chatting
+        <p className="text-base-content/60 text-emerald-500">
+          Select a conversation from sidebar the to start chatting
         </p>
       </div>
     </div>
